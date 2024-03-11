@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("./starter-code/assets/home/background-home-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 3rem 0 3rem 2.4rem;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  height: 50dvh;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.leftSection {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+h3 {
+  font-size: 1.3rem;
+  letter-spacing: 4.75px;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 8.5rem;
+  margin-block: 1rem;
+  text-transform: uppercase;
+  /* font-size: clamp(2dvw, 10rem, 5dvw); */
+}
+
+.Explore {
+  width: 274px;
+  display: flex;
+  height: 274px;
+  font-size: 2rem;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.para p {
+  width: 50%;
+  font-size: 16px;
+  line-height: 1.85rem;
+}
