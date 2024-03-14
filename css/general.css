@@ -5,6 +5,13 @@
   box-sizing: border-box;
 }
 
+body {
+  height: 100dvh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
 header {
   display: flex;
   position: relative;

@@ -1,7 +1,5 @@
 body {
-  background: url("/starter-code/assets/technology/background-technology-desktop.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background: url("../starter-code/assets/technology/background-technology-desktop.jpg");
 }
 
 li:last-child a:hover::after {

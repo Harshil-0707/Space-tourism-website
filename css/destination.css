@@ -1,7 +1,5 @@
 body {
-  background: url("/starter-code/assets/destination/background-destination-desktop.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background: url("../starter-code/assets/destination/background-destination-tablet.jpg");
 }
 
 /* nav links */
