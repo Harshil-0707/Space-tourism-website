@@ -1,0 +1,13 @@
+body {
+  background: url("/starter-code/assets/crew/background-crew-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+li:nth-child(3) a:hover::after {
+  opacity: 1;
+}
+
+li:nth-child(3) a::after {
+  background-color: var(--White);
+}

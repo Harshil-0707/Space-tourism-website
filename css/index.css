@@ -1,37 +1,15 @@
-* {
-  margin: 0;
-  padding: 0;
-  outline: none;
-  box-sizing: border-box;
-}
-
 body {
-  background: url("./starter-code/assets/home/background-home-desktop.jpg");
+  background: url("/starter-code/assets/home/background-home-desktop.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
-header {
-  display: flex;
-  align-items: center;
-  padding: 3rem 0 3rem 2.4rem;
-  justify-content: space-between;
-}
-
-ul {
-  display: flex;
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
 main {
   display: flex;
-  height: 50dvh;
+  height: 60dvh;
   align-items: flex-end;
-  justify-content: space-around;
+  justify-content: center;
+  /* @media (min-width:){} */
 }
 
 .leftSection {
@@ -42,7 +20,7 @@ main {
 }
 
 h3 {
-  font-size: 1.3rem;
+  font-size: 1.52rem;
   letter-spacing: 4.75px;
   text-transform: uppercase;
 }
@@ -62,6 +40,7 @@ h1 {
   font-size: 2rem;
   border-radius: 50%;
   align-items: center;
+  letter-spacing: 2px;
   justify-content: center;
   text-transform: uppercase;
 }
@@ -70,4 +49,12 @@ h1 {
   width: 50%;
   font-size: 16px;
   line-height: 1.85rem;
+}
+
+li:first-child a:hover::after {
+  opacity: 1;
+}
+
+li:first-child a::after {
+  background-color: var(--White);
 }

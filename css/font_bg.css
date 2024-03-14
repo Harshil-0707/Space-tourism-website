@@ -4,8 +4,8 @@
 
 :root {
   /*colors */
-  --bg-black: hsl(230, 35%, 7%);
   --White: hsl(0, 0%, 100%);
+  --bg-black: hsl(230, 35%, 7%);
   --light-shade-blue: hsl(231, 77%, 90%);
 
   /* font family */
@@ -31,6 +31,33 @@ h3 {
   font-family: var(--Barlow-Condensed);
 }
 
+a,
+a:visited {
+  color: var(--White);
+  font-family: var(--Barlow-Condensed);
+}
+
+li a:hover::after {
+  opacity: 0.5;
+  background-color: var(--White);
+}
+
+span {
+  font-weight: 900;
+  color: var(--White);
+}
+
+nav {
+  backdrop-filter: blur(1.5rem);
+  background: hsla(0, 0%, 100%, 0.05);
+}
+
+hr {
+  height: 1px;
+  opacity: 0.2;
+  color: var(--light-shade-blue);
+}
+
 .clr-white {
   color: var(--White);
 }
@@ -53,8 +80,11 @@ h3 {
   background-color: var(--White);
 }
 
-a,
-a:visited {
-  color: var(--White);
-  font-family: var(--Barlow-Condensed);
+.Explore {
+  font-weight: 500;
+  font-family: var(--Bellefair);
+}
+
+.Explore:hover {
+  cursor: pointer;
 }

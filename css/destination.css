@@ -1,0 +1,25 @@
+body {
+  background: url("/starter-code/assets/destination/background-destination-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/* nav links */
+
+li:nth-child(2) a:hover::after {
+  opacity: 1;
+}
+
+li:nth-child(2) a::after {
+  background-color: var(--White);
+}
+
+/* main */
+
+h3 {
+  color: var(--White);
+}
+
+h3 span {
+  opacity: 0.25;
+}

@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 3rem 0 3rem 3rem;
+  justify-content: space-between;
+}
+
+nav {
+  width: 60%;
+}
+
+hr {
+  width: 33%;
+  right: 56.2%;
+  z-index: 999;
+  position: absolute;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+li {
+  position: relative;
+}
+
+ul li:not(:last-child) {
+  margin-inline: 0 5rem;
+}
+
+li {
+  padding-block: 2rem;
+}
+
+li a::after {
+  left: 0;
+  top: 96%;
+  content: "";
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  border-radius: 100vh;
+}
+
+a {
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+li a span {
+  font-size: 20px;
+  margin-inline: 0 0.2rem;
+}
