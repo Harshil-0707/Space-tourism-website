@@ -1,9 +1,11 @@
 body {
   background: url("../starter-code/assets/crew/background-crew-desktop.jpg");
+  background-position: 0px -14rem;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: 0px -14rem;
 }
+
+/* nav links */
 
 li:nth-child(3) a:hover::after {
   opacity: 1;
@@ -11,4 +13,77 @@ li:nth-child(3) a:hover::after {
 
 li:nth-child(3) a::after {
   background-color: var(--White);
+}
+
+/* main */
+
+.leftPart {
+  width: 45%;
+  margin-left: 10.2rem;
+}
+
+.leftPart .crew {
+  font-size: 1.8rem;
+  color: var(--White);
+  letter-spacing: 3px;
+  margin-block: 0 7rem;
+}
+
+.leftPart > h3 > span {
+  opacity: 25%;
+  margin-right: 10px;
+}
+
+.leftPart h3 + h3 {
+  opacity: 50%;
+  font-size: 1.75rem;
+  color: var(--White);
+  font-family: var(--Bellefair);
+}
+
+.leftPart h2 {
+  font-size: 3.4rem;
+  color: var(--White);
+  margin-block: 1rem 0;
+  font-family: var(--Bellefair);
+}
+
+.leftPart .para {
+  margin-block: 2rem 5rem;
+}
+
+.leftPart .para p {
+  width: 60%;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+}
+
+.dots {
+  display: flex;
+}
+
+.dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.166);
+}
+
+.dot:first-child {
+  background-color: var(--White);
+}
+
+.dot {
+  margin-inline: 0 25px;
+}
+
+.dot:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.256);
+}
+
+/* rightPart */
+
+.rightPart img {
+  width: 74.3%;
 }

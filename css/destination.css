@@ -18,7 +18,7 @@ nav li:nth-child(2) a::after {
 /* main */
 
 main {
-  column-gap: 10rem;
+  column-gap: 16rem;
   margin-inline: 11dvw 0;
 }
 
@@ -31,9 +31,8 @@ main {
 h3 {
   font-size: 1.6rem;
   color: var(--White);
-  margin-bottom: 3rem;
   letter-spacing: 4px;
-  text-transform: uppercase;
+  margin-bottom: 3.5rem;
 }
 
 h3 span {
@@ -43,7 +42,7 @@ h3 span {
 
 .leftPart img {
   width: 95%;
-  margin-inline: 2rem 0;
+  margin-inline: 4rem 0;
 }
 
 /* Right Part */
@@ -61,14 +60,41 @@ h3 span {
   background-color: var(--White);
 }
 
-h2 {
+.rightPart h2 {
   font-size: 6.5rem;
   color: var(--White);
+  margin-block: 0 0.5rem;
   font-family: var(--Bellefair);
 }
 
+.rightPart .para {
+  margin-bottom: 2.6rem;
+}
+
 .rightPart .para p {
-  width: 54%;
+  width: 62%;
   font-size: 1.2rem;
-  line-height: 1.5rem;
+  line-height: 1.8rem;
+}
+
+.rightPart hr {
+  width: 58%;
+  position: static;
+  margin-bottom: 2rem;
+}
+
+.distance-time {
+  display: flex;
+  column-gap: 7rem;
+}
+
+.info > div {
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.info > div + div {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  font-family: var(--Bellefair);
 }
