@@ -66,8 +66,8 @@ hr {
   background-color: var(--bg-black);
 }
 
-.light-blue {
-  font-weight: 200;
+body .light-blue {
+  font-weight: 300;
   color: var(--light-shade-blue);
   font-family: var(--Barlow-Condensed);
 }

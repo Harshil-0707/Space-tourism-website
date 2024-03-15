@@ -5,18 +5,15 @@
   box-sizing: border-box;
 }
 
-body {
-  height: 100dvh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom center;
+main {
+  display: flex;
 }
 
 header {
   display: flex;
   position: relative;
   align-items: center;
-  padding: 3rem 0 3rem 3rem;
+  padding: 2.2rem 0 3rem 3rem;
   justify-content: space-between;
 }
 
@@ -41,11 +38,11 @@ li {
   position: relative;
 }
 
-ul li:not(:last-child) {
+nav ul li:not(:last-child) {
   margin-inline: 0 5rem;
 }
 
-li {
+nav li {
   padding-block: 2rem;
 }
 

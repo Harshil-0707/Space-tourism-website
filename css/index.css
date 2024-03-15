@@ -1,5 +1,7 @@
 body {
   background-image: url("../starter-code/assets/home/background-home-desktop.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 main {
@@ -44,8 +46,8 @@ h1 {
 }
 
 .para p {
-  width: 50%;
-  font-size: 16px;
+  width: 52%;
+  font-size: 1rem;
   line-height: 1.85rem;
 }
 

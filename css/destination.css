@@ -1,23 +1,74 @@
 body {
   background: url("../starter-code/assets/destination/background-destination-tablet.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0 -20rem;
 }
 
 /* nav links */
 
-li:nth-child(2) a:hover::after {
+nav li:nth-child(2) a:hover::after {
   opacity: 1;
 }
 
-li:nth-child(2) a::after {
+nav li:nth-child(2) a::after {
   background-color: var(--White);
 }
 
 /* main */
 
+main {
+  column-gap: 10rem;
+  margin-inline: 11dvw 0;
+}
+
+/* Left Part */
+
+.leftPart {
+  width: 60%;
+}
+
 h3 {
+  font-size: 1.6rem;
   color: var(--White);
+  margin-bottom: 3rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
 }
 
 h3 span {
-  opacity: 0.25;
+  opacity: 0.35;
+  margin-inline: 0 20px;
+}
+
+.leftPart img {
+  width: 95%;
+  margin-inline: 2rem 0;
+}
+
+/* Right Part */
+
+.rightPart ul {
+  justify-content: left;
+}
+
+.rightPart ul li {
+  padding: 20px 0;
+  margin: 2.5rem 2.75rem 1rem 0;
+}
+
+.rightPart li:first-child a::after {
+  background-color: var(--White);
+}
+
+h2 {
+  font-size: 6.5rem;
+  color: var(--White);
+  font-family: var(--Bellefair);
+}
+
+.rightPart .para p {
+  width: 54%;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
 }
