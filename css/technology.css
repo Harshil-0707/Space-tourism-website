@@ -4,10 +4,77 @@ body {
   background-size: 100%;
 }
 
+/* nav links */
+
 li:last-child a:hover::after {
   opacity: 1;
 }
 
 li:last-child a::after {
   background-color: var(--White);
+}
+
+/* main */
+
+.leftPart {
+  margin-left: 11dvw;
+}
+
+.leftPart h3 {
+  font-size: 1.5rem;
+  color: var(--White);
+  letter-spacing: 4px;
+  margin-bottom: 7rem;
+}
+
+.leftPart h3 span {
+  opacity: 0.25;
+  font-weight: 700;
+  margin-inline: 0 1rem;
+}
+
+.bodyContent {
+  display: flex;
+  column-gap: 4rem;
+}
+
+.numbers {
+  font-weight: 500;
+  font-size: 1.6rem;
+  padding: 20px 28px;
+  border-radius: 50%;
+}
+
+.numbers:nth-child(even) {
+  margin-block: 2.5rem;
+}
+
+.bodyContentRight .terminology {
+  font-size: 15px;
+  word-spacing: 2px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.bodyContentRight h2 {
+  font-size: 3.5rem;
+  margin-block: 0.4rem 1.6rem;
+}
+
+.para p {
+  width: 54.5%;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.85rem;
+}
+
+.rightPart {
+  width: 68%;
+}
+
+main img {
+  width: 100%;
+  margin-top: 2.3rem;
+  object-fit: contain;
+  background-repeat: no-repeat;
 }

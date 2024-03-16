@@ -43,7 +43,7 @@ li a:hover::after {
   background-color: var(--White);
 }
 
-span {
+li a span {
   font-weight: 900;
   color: var(--White);
 }
@@ -88,4 +88,30 @@ body .light-blue {
 
 .Explore:hover {
   cursor: pointer;
+}
+
+.numbers {
+  color: var(--White);
+  font-family: var(--Bellefair);
+  border: 1px solid var(--light-shade-blue);
+}
+
+.numbers:first-child {
+  color: var(--bg-black);
+  background-color: var(--White);
+}
+
+.numbers:hover {
+  cursor: pointer;
+  border-color: var(--White);
+}
+
+.bodyContentRight > div {
+  color: var(--light-shade-blue);
+  font-family: var(--Barlow-Condensed);
+}
+
+.bodyContentRight h2 {
+  color: var(--White);
+  font-family: var(--Bellefair);
 }

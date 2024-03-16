@@ -39,7 +39,7 @@ li {
 }
 
 nav ul li:not(:last-child) {
-  margin-inline: 0 5rem;
+  margin-inline: 0 4rem;
 }
 
 nav li {
