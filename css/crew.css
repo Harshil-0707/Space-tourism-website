@@ -30,7 +30,8 @@ li:nth-child(3) a::after {
 }
 
 .leftPart > h3 > span {
-  opacity: 25%;
+  opacity: 0.25;
+  font-weight: 800;
   margin-right: 10px;
 }
 
@@ -49,11 +50,11 @@ li:nth-child(3) a::after {
 }
 
 .leftPart .para {
-  margin-block: 2rem 5rem;
+  margin-block: 1.5rem 3.5rem;
 }
 
 .leftPart .para p {
-  width: 60%;
+  width: 61%;
   font-size: 1.1rem;
   line-height: 1.6rem;
 }

@@ -62,14 +62,14 @@ li:last-child a::after {
 }
 
 .para p {
-  width: 54.5%;
+  width: 55.5%;
   font-size: 18px;
   font-weight: 300;
   line-height: 1.85rem;
 }
 
 .rightPart {
-  width: 68%;
+  width: 70%;
 }
 
 main img {
