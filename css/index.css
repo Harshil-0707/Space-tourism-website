@@ -1,16 +1,24 @@
 body {
+  height: 100%;
   background-image: url("../starter-code/assets/home/background-home-desktop.jpg");
   background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
+}
+
+header {
+  margin-block: 0 2rem;
 }
 
 main {
   display: flex;
-  height: 60dvh;
+  /* height: 60dvh; */
   align-items: flex-end;
   justify-content: center;
   /* @media (min-width:){} */
 }
+
+/* Left section */
 
 .leftSection {
   width: 50%;
@@ -32,18 +40,6 @@ h1 {
   /* font-size: clamp(2dvw, 10rem, 5dvw); */
 }
 
-.Explore {
-  width: 274px;
-  display: flex;
-  height: 274px;
-  font-size: 2rem;
-  border-radius: 50%;
-  align-items: center;
-  letter-spacing: 2px;
-  justify-content: center;
-  text-transform: uppercase;
-}
-
 .para p {
   width: 52%;
   font-size: 1rem;
@@ -56,4 +52,35 @@ li:first-child a:hover::after {
 
 li:first-child a::after {
   background-color: var(--White);
+}
+
+/* Right */
+
+.Explore {
+  width: 274px;
+  display: flex;
+  height: 274px;
+  font-size: 2rem;
+  border-radius: 50%;
+  position: relative;
+  align-items: center;
+  letter-spacing: 2px;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.Explore::before {
+  width: 0;
+  height: 0;
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  transition: all 1s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.111);
+}
+
+.Explore:hover::before {
+  width: 390px;
+  height: 390px;
+  cursor: pointer;
 }

@@ -27,12 +27,6 @@ li:last-child a::after {
   margin-bottom: 7rem;
 }
 
-.leftPart h3 span {
-  opacity: 0.25;
-  font-weight: 700;
-  margin-inline: 0 1rem;
-}
-
 .bodyContent {
   display: flex;
   column-gap: 4rem;

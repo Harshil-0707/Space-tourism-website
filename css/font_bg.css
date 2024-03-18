@@ -86,10 +86,6 @@ body .light-blue {
   font-family: var(--Bellefair);
 }
 
-.Explore:hover {
-  cursor: pointer;
-}
-
 .numbers {
   color: var(--White);
   font-family: var(--Bellefair);

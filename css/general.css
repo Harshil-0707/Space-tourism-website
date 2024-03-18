@@ -11,10 +11,13 @@ main {
 
 header {
   display: flex;
+  padding-left: 3rem;
   position: relative;
   align-items: center;
-  padding: 2.2rem 0 3rem 3rem;
   justify-content: space-between;
+  @media (min-width: 1260px) {
+    padding: 2.2rem 0 3rem 3rem;
+  }
 }
 
 nav {
@@ -25,7 +28,14 @@ hr {
   width: 33%;
   right: 56.2%;
   z-index: 999;
+  display: none;
   position: absolute;
+}
+
+@media (min-width: 1260px) {
+  hr {
+    display: flex;
+  }
 }
 
 ul {
@@ -64,6 +74,16 @@ a {
 }
 
 li a span {
+  display: none;
   font-size: 20px;
   margin-inline: 0 0.2rem;
+  @media (min-width: 1260px) {
+    display: inline;
+  }
+}
+
+.leftPart > h3 > span {
+  opacity: 0.25;
+  font-weight: 800;
+  margin-right: 10px;
 }

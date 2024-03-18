@@ -29,12 +29,6 @@ li:nth-child(3) a::after {
   margin-block: 0 7rem;
 }
 
-.leftPart > h3 > span {
-  opacity: 0.25;
-  font-weight: 800;
-  margin-right: 10px;
-}
-
 .leftPart h3 + h3 {
   opacity: 50%;
   font-size: 1.75rem;
