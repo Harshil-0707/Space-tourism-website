@@ -7,15 +7,21 @@ body {
 }
 
 header {
-  margin-block: 0 2rem;
+  margin-block: 0 4rem;
+}
+
+li:first-child a:hover::after {
+  opacity: 1;
+}
+
+li:first-child a::after {
+  background-color: var(--White);
 }
 
 main {
   display: flex;
-  /* height: 60dvh; */
   align-items: flex-end;
   justify-content: center;
-  /* @media (min-width:){} */
 }
 
 /* Left section */
@@ -37,21 +43,12 @@ h1 {
   font-size: 8.5rem;
   margin-block: 1rem;
   text-transform: uppercase;
-  /* font-size: clamp(2dvw, 10rem, 5dvw); */
 }
 
 .para p {
-  width: 52%;
-  font-size: 1rem;
+  width: 54%;
+  font-size: 1.03rem;
   line-height: 1.85rem;
-}
-
-li:first-child a:hover::after {
-  opacity: 1;
-}
-
-li:first-child a::after {
-  background-color: var(--White);
 }
 
 /* Right */
@@ -76,7 +73,7 @@ li:first-child a::after {
   position: absolute;
   border-radius: 50%;
   transition: all 1s ease-in-out;
-  background-color: rgba(255, 255, 255, 0.111);
+  background-color: rgba(255, 255, 255, 0.126);
 }
 
 .Explore:hover::before {

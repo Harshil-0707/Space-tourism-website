@@ -51,7 +51,8 @@ h3 {
   margin: 2.5rem 2.75rem 1rem 0;
 }
 
-.rightPart li:first-child a::after {
+main .rightPart .afterbg a::after {
+  opacity: 1;
   background-color: var(--White);
 }
 

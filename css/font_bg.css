@@ -92,7 +92,7 @@ body .light-blue {
   border: 1px solid var(--light-shade-blue);
 }
 
-.numbers:first-child {
+.bg-color {
   color: var(--bg-black);
   background-color: var(--White);
 }
