@@ -3,6 +3,7 @@ body {
   background-position: 0px -14rem;
   background-repeat: no-repeat;
   background-size: 100%;
+  background-color: var(--bg-black);
 }
 
 /* nav links */
@@ -17,9 +18,22 @@ li:nth-child(3) a::after {
 
 /* main */
 
+main {
+  @media (max-width: 1260px) {
+    flex-direction: column;
+  }
+}
+
 .leftPart {
   width: 45%;
+  display: flex;
   margin-left: 10.2rem;
+  flex-direction: column;
+  @media (max-width: 1260px) {
+    width: 100%;
+    margin-left: 0rem;
+    align-items: center;
+  }
 }
 
 .leftPart .crew {
@@ -45,12 +59,19 @@ li:nth-child(3) a::after {
 
 .leftPart .para {
   margin-block: 1.5rem 3.5rem;
+  @media (max-width: 1260px) {
+    width: 45%;
+  }
 }
 
 .leftPart .para p {
   width: 61%;
   font-size: 1.1rem;
   line-height: 1.6rem;
+  @media (max-width: 1260px) {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .dots {
@@ -69,7 +90,7 @@ li:nth-child(3) a::after {
 }
 
 .dot:hover {
-  opacity: 0.25;
+  opacity: 0.5;
   cursor: pointer;
   background-color: rgba(255, 255, 255);
 }
