@@ -8,6 +8,12 @@ body {
 
 /* nav links */
 
+header {
+  @media (max-width: 1260px) {
+    margin-bottom: 2rem;
+  }
+}
+
 li:nth-child(3) a:hover::after {
   opacity: 1;
 }
@@ -20,6 +26,8 @@ li:nth-child(3) a::after {
 
 main {
   @media (max-width: 1260px) {
+    row-gap: 5rem;
+    align-items: center;
     flex-direction: column;
   }
 }
@@ -32,6 +40,13 @@ main {
   @media (max-width: 1260px) {
     width: 100%;
     margin-left: 0rem;
+  }
+}
+
+.leftPart .name-des {
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 1260px) {
     align-items: center;
   }
 }
@@ -40,10 +55,10 @@ main {
   font-size: 1.8rem;
   color: var(--White);
   letter-spacing: 3px;
-  margin-block: 0 7rem;
+  margin: 0 0 7rem 2.8rem;
 }
 
-.leftPart h3 + h3 {
+.leftPart .name-des h3 {
   opacity: 50%;
   font-size: 1.75rem;
   color: var(--White);
@@ -60,16 +75,16 @@ main {
 .leftPart .para {
   margin-block: 1.5rem 3.5rem;
   @media (max-width: 1260px) {
-    width: 45%;
+    width: 63%;
   }
 }
 
 .leftPart .para p {
   width: 61%;
   font-size: 1.1rem;
-  line-height: 1.6rem;
+  line-height: 1.8rem;
   @media (max-width: 1260px) {
-    width: 100%;
+    width: 90%;
     text-align: center;
   }
 }
@@ -102,6 +117,15 @@ main {
 
 /* rightPart */
 
+.rightPart {
+  @media (max-width: 1260px) {
+    text-align: center;
+  }
+}
+
 .rightPart img {
   width: 74.3%;
+  @media (max-width: 1260px) {
+    width: 70%;
+  }
 }

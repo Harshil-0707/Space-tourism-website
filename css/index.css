@@ -82,3 +82,22 @@ h1 {
   height: 390px;
   cursor: pointer;
 }
+
+@media (max-width: 986px) {
+  header {
+    margin-bottom: 7rem;
+  }
+  main {
+    row-gap: 12rem;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    flex-direction: column;
+  }
+  .leftSection {
+    align-items: center;
+  }
+  main .leftSection .para p {
+    width: 92%;
+  }
+}

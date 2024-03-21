@@ -20,6 +20,16 @@ header {
   }
 }
 
+@media (min-width: 630px) {
+  nav {
+    display: block !important;
+  }
+}
+
+nav {
+  display: none;
+}
+
 nav {
   width: 60%;
 }
