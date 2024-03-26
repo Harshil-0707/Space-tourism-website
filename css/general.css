@@ -24,14 +24,14 @@ header {
   nav {
     display: block !important;
   }
+  .hamburger {
+    display: none;
+  }
 }
 
 nav {
   display: none;
-}
-
-nav {
-  width: 60%;
+  /* width: 60%; */
 }
 
 hr {
@@ -40,6 +40,10 @@ hr {
   z-index: 999;
   display: none;
   position: absolute;
+}
+
+#hamburger {
+  margin-right: 2rem;
 }
 
 @media (min-width: 1260px) {

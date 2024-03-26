@@ -40,9 +40,9 @@ h3 {
 
 h1 {
   font-weight: 300;
-  font-size: 8.5rem;
   margin-block: 1rem;
   text-transform: uppercase;
+  font-size: clamp(5rem, 10dvw, 12rem);
 }
 
 .para p {
@@ -99,5 +99,11 @@ h1 {
   }
   main .leftSection .para p {
     width: 92%;
+  }
+}
+
+@media (max-width: 630px) {
+  header {
+    margin-top: 2rem;
   }
 }
