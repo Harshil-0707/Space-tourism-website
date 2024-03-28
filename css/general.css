@@ -5,15 +5,19 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 main {
   display: flex;
 }
 
 header {
   display: flex;
-  padding-left: 3rem;
   position: relative;
   align-items: center;
+  padding-left: 1.5rem;
   justify-content: space-between;
   @media (min-width: 1260px) {
     padding: 2.2rem 0 3rem 3rem;
@@ -24,14 +28,9 @@ header {
   nav {
     display: block !important;
   }
-  .hamburger {
+  #hamburger {
     display: none;
   }
-}
-
-nav {
-  display: none;
-  /* width: 60%; */
 }
 
 hr {
@@ -60,6 +59,14 @@ ul {
 
 li {
   position: relative;
+}
+
+nav {
+  display: none;
+}
+
+.show nav {
+  display: block;
 }
 
 nav ul li:not(:last-child) {
@@ -100,4 +107,40 @@ li a span {
   opacity: 0.25;
   font-weight: 800;
   margin-right: 10px;
+}
+
+@media (max-width: 630px) {
+  body {
+    position: relative;
+  }
+  nav {
+    right: 0;
+    top: -32px;
+    width: 65%;
+    z-index: 99;
+    height: 190dvh;
+    position: absolute;
+    flex-direction: column;
+  }
+  nav ul {
+    align-items: center;
+    flex-direction: column;
+  }
+  nav li {
+    width: 100%;
+    padding-block: 1rem;
+  }
+  li a span {
+    display: inline-block;
+  }
+  nav ul li:not(:last-child) {
+    margin-inline: 0;
+  }
+  li a::after {
+    right: 0;
+    top: 35%;
+    left: 98%;
+    width: 1.2%;
+    height: 50%;
+  }
 }

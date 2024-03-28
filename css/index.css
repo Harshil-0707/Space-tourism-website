@@ -42,7 +42,7 @@ h1 {
   font-weight: 300;
   margin-block: 1rem;
   text-transform: uppercase;
-  font-size: clamp(5rem, 10dvw, 12rem);
+  font-size: clamp(4rem, 9dvw, 10rem);
 }
 
 .para p {
