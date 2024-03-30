@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  margin-block: 0 4rem;
+  margin-block: 0 1rem;
 }
 
 li:first-child a:hover::after {
@@ -42,11 +42,11 @@ h1 {
   font-weight: 300;
   margin-block: 1rem;
   text-transform: uppercase;
-  font-size: clamp(4rem, 9dvw, 10rem);
+  font-size: clamp(4rem, 9.7dvw, 10rem);
 }
 
 .para p {
-  width: 54%;
+  width: 57%;
   font-size: 1.03rem;
   line-height: 1.85rem;
 }

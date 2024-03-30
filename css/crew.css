@@ -35,7 +35,7 @@ main {
 .leftPart {
   width: 45%;
   display: flex;
-  margin-left: 10.2rem;
+  margin-left: 9.5rem;
   flex-direction: column;
   @media (max-width: 1260px) {
     width: 100%;
@@ -55,7 +55,7 @@ main {
   font-size: 1.8rem;
   color: var(--White);
   letter-spacing: 3px;
-  margin: 0 0 7rem 2.8rem;
+  margin: 0 0 3rem 0rem;
 }
 
 .leftPart .name-des h3 {
@@ -80,7 +80,7 @@ main {
 }
 
 .leftPart .para p {
-  width: 61%;
+  width: 70%;
   font-size: 1.1rem;
   line-height: 1.8rem;
   @media (max-width: 1260px) {
@@ -124,7 +124,7 @@ main {
 }
 
 .rightPart img {
-  width: 74.3%;
+  width: 65%;
   @media (max-width: 1260px) {
     width: 70%;
   }

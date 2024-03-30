@@ -18,17 +18,18 @@ nav li:nth-child(2) a::after {
 /* main */
 
 main {
-  column-gap: 16rem;
+  column-gap: 11rem;
   margin-inline: 11dvw 0;
 }
 
 /* Left Part */
 
 .leftPart {
-  width: 60%;
+  width: 65%;
 }
 
 h3 {
+  width: 105%;
   font-size: 1.6rem;
   color: var(--White);
   letter-spacing: 4px;
@@ -37,6 +38,7 @@ h3 {
 
 .leftPart img {
   width: 100%;
+  margin-left: 2rem;
   animation: rotate 170s linear infinite;
 }
 
@@ -77,7 +79,7 @@ main .rightPart .afterbg a::after {
 }
 
 .rightPart .para p {
-  width: 62%;
+  width: 68.5%;
   font-size: 1.2rem;
   line-height: 1.8rem;
 }
