@@ -2,7 +2,14 @@ body {
   background: url("../starter-code/assets/destination/background-destination-tablet.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: 0 -20rem;
+  background-size: cover;
+  /* background-position: 0 -20rem; */
+}
+
+/* header */
+
+header {
+  margin-bottom: 2.5rem;
 }
 
 /* nav links */
@@ -25,21 +32,23 @@ main {
 /* Left Part */
 
 .leftPart {
-  width: 65%;
+  width: 85%;
 }
 
 h3 {
-  width: 105%;
-  font-size: 1.6rem;
+  width: 100%;
+  font-size: 1.8rem;
   color: var(--White);
   letter-spacing: 4px;
-  margin-bottom: 3.5rem;
+  margin-bottom: 4.5rem;
 }
 
 .leftPart img {
-  width: 100%;
-  margin-left: 2rem;
+  width: 50%;
   animation: rotate 170s linear infinite;
+  @media (min-width: 988px) {
+    margin-left: 2rem;
+  }
 }
 
 @keyframes rotate {
@@ -52,6 +61,15 @@ h3 {
 }
 
 /* Right Part */
+
+.rightPart {
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 986px) {
+    align-items: center;
+    justify-content: center;
+  }
+}
 
 .rightPart ul {
   justify-content: left;
@@ -75,17 +93,17 @@ main .rightPart .afterbg a::after {
 }
 
 .rightPart .para {
+  width: 70%;
   margin-bottom: 2.6rem;
 }
 
 .rightPart .para p {
-  width: 68.5%;
   font-size: 1.2rem;
   line-height: 1.8rem;
 }
 
 .rightPart hr {
-  width: 58%;
+  width: 68.5%;
   position: static;
   margin-bottom: 2rem;
 }

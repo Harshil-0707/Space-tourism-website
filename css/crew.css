@@ -117,14 +117,15 @@ main {
 
 /* rightPart */
 
-.rightPart {
+.leftPart + img {
   @media (max-width: 1260px) {
     text-align: center;
   }
 }
 
-.rightPart img {
-  width: 65%;
+.leftPart + img {
+  width: 24.2%;
+  height: auto;
   @media (max-width: 1260px) {
     width: 70%;
   }

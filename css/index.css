@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  margin-block: 0 1rem;
+  margin-block: 0 4rem;
 }
 
 li:first-child a:hover::after {
@@ -42,11 +42,11 @@ h1 {
   font-weight: 300;
   margin-block: 1rem;
   text-transform: uppercase;
-  font-size: clamp(4rem, 9.7dvw, 10rem);
+  font-size: clamp(5rem, 8vw + 1.5rem, 9rem);
 }
 
 .para p {
-  width: 57%;
+  width: 26rem;
   font-size: 1.03rem;
   line-height: 1.85rem;
 }
@@ -54,9 +54,9 @@ h1 {
 /* Right */
 
 .Explore {
-  width: 274px;
+  width: 224px;
   display: flex;
-  height: 274px;
+  height: 224px;
   font-size: 2rem;
   border-radius: 50%;
   position: relative;
@@ -78,32 +78,35 @@ h1 {
 }
 
 .Explore:hover::before {
-  width: 390px;
-  height: 390px;
+  width: 320px;
+  height: 320px;
   cursor: pointer;
+}
+
+@media (max-width: 1260px) {
+  header {
+    margin-bottom: 10rem;
+  }
+}
+
+@media (max-width: 986px) {
+  body {
+    height: 100%;
+    background-image: url("../starter-code/assets/home/background-home-tablet.jpg");
+    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 @media (max-width: 986px) {
   header {
     margin-bottom: 7rem;
   }
-  main {
-    row-gap: 12rem;
-    text-align: center;
-    align-items: center;
-    margin-bottom: 4rem;
-    flex-direction: column;
-  }
   .leftSection {
     align-items: center;
   }
   main .leftSection .para p {
     width: 92%;
-  }
-}
-
-@media (max-width: 630px) {
-  header {
-    margin-top: 2rem;
   }
 }
