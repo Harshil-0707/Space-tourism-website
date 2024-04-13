@@ -3,7 +3,6 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   background-size: cover;
-  /* background-position: 0 -20rem; */
 }
 
 /* header */
@@ -44,7 +43,7 @@ h3 {
 }
 
 .leftPart img {
-  width: 50%;
+  width: 90%;
   animation: rotate 170s linear infinite;
   @media (min-width: 988px) {
     margin-left: 2rem;
@@ -81,7 +80,7 @@ h3 {
 }
 
 main .rightPart .afterbg a::after {
-  opacity: 1;
+  opacity: 1 !important;
   background-color: var(--White);
 }
 
