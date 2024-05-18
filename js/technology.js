@@ -1,5 +1,5 @@
-let elements = [];
 let index = 0;
+let elements = [];
 const bio = document.querySelector(".bio");
 const numbers = document.querySelectorAll(".numbers");
 const RightImage = document.querySelector(".rightPart img");

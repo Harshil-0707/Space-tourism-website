@@ -25,7 +25,9 @@ nav li:nth-child(2) a::after {
 
 main {
   column-gap: 11rem;
-  margin-inline: 11dvw 0;
+  @media (min-width: 987px) {
+    margin-inline: 11dvw 0;
+  }
 }
 
 /* Left Part */
@@ -43,7 +45,7 @@ h3 {
 }
 
 .leftPart img {
-  width: 90%;
+  width: 12rem;
   animation: rotate 170s linear infinite;
   @media (min-width: 988px) {
     margin-left: 2rem;

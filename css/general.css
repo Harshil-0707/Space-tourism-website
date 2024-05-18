@@ -45,6 +45,9 @@ header {
 }
 
 #hamburger {
+  right: 0;
+  z-index: 9999;
+  position: absolute;
   margin-right: 2rem;
 }
 
@@ -137,13 +140,16 @@ main {
   margin-right: 10px;
 }
 
+.show {
+  display: block;
+}
+
 @media (max-width: 986px) {
   main {
-    row-gap: 12rem;
     text-align: center;
     align-items: center !important;
     margin-bottom: 4rem;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
 
@@ -155,12 +161,13 @@ main {
     margin-top: 2rem !important;
   }
   nav {
+    top: 0;
     right: 0;
-    top: -32px;
-    width: 65%;
+    width: 70%;
     z-index: 99;
-    height: 190dvh;
-    position: absolute;
+    height: 100dvh;
+    position: fixed;
+    padding: 8rem 0 0 2rem;
     flex-direction: column;
   }
   nav ul {

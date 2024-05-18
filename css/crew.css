@@ -123,8 +123,8 @@ main {
 }
 
 .leftPart + img {
-  width: 24.2%;
-  height: auto;
+  width: auto;
+  height: 28.8rem;
   @media (max-width: 1260px) {
     width: 70%;
   }

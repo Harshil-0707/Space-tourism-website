@@ -2,6 +2,9 @@ body {
   background: url("../starter-code/assets/technology/background-technology-desktop.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
+  @media (max-width: 986px) {
+    background: url("../starter-code/assets/technology/background-technology-tablet.jpg");
+  }
 }
 
 /* nav links */
@@ -30,6 +33,21 @@ li:last-child a::after {
 .bodyContent {
   display: flex;
   column-gap: 4rem;
+  @media (max-width: 986px) {
+    column-gap: 0;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.changeables {
+  @media (max-width: 986px) {
+    margin: 0;
+    display: flex;
+    column-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .numbers {
@@ -53,6 +71,13 @@ li:last-child a::after {
 .bodyContentRight h2 {
   font-size: 3.5rem;
   margin-block: 0.4rem 1.2rem;
+}
+
+.para {
+  @media (max-width: 986px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .para p {
