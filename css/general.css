@@ -149,7 +149,7 @@ main {
     text-align: center;
     align-items: center !important;
     margin-bottom: 4rem;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 }
 
@@ -186,9 +186,15 @@ main {
   }
   nav li a::after {
     right: 0;
-    top: 35%;
+    top: 26%;
     left: 98%;
     width: 1.2%;
-    height: 50%;
+    height: 45%;
+  }
+}
+
+@media (max-width: 930px) {
+  nav {
+    width: 70%;
   }
 }

@@ -27,6 +27,7 @@ li:nth-child(3) a::after {
 main {
   @media (max-width: 1260px) {
     row-gap: 5rem;
+    margin-bottom: 0;
     align-items: center;
   }
 }
@@ -36,18 +37,18 @@ main {
   display: flex;
   margin-left: 9.5rem;
   flex-direction: column;
-  @media (max-width: 1260px) {
+  justify-content: center;
+  @media (max-width: 987px) {
+    margin: 0;
     width: 100%;
-    margin-left: 0rem;
+    align-items: center;
+    justify-content: center;
   }
 }
 
 .leftPart .name-des {
   display: flex;
   flex-direction: column;
-  @media (max-width: 1260px) {
-    align-items: center;
-  }
 }
 
 .leftPart .crew {
@@ -55,6 +56,9 @@ main {
   color: var(--White);
   letter-spacing: 3px;
   margin: 0 0 3rem 0rem;
+  @media (max-width: 1261px) {
+    margin-left: 2rem;
+  }
 }
 
 .leftPart .name-des h3 {
@@ -78,18 +82,25 @@ main {
   }
 }
 
+.dots {
+  display: flex;
+}
+
 .leftPart .para p {
   width: 70%;
   font-size: 1.1rem;
   line-height: 1.8rem;
-  @media (max-width: 1260px) {
+  @media (max-width: 1261px) {
     width: 90%;
     text-align: center;
   }
 }
 
-.dots {
-  display: flex;
+@media (max-width: 1261px) {
+  .para {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .dot {
@@ -116,6 +127,16 @@ main {
 
 /* rightPart */
 
+#rightSection {
+  width: 50%;
+  display: grid;
+  justify-content: center;
+}
+
+#rightSection img {
+  width: 76.2%;
+}
+
 .leftPart + img {
   @media (max-width: 1260px) {
     text-align: center;
@@ -127,5 +148,21 @@ main {
   height: 28.8rem;
   @media (max-width: 1260px) {
     width: 70%;
+  }
+}
+
+@media (max-width: 987px) {
+  .leftPart .para {
+    width: 100%;
+  }
+  .dots {
+    justify-content: center;
+  }
+  #rightSection img {
+    width: 60%;
+  }
+  #rightSection {
+    width: 100%;
+    justify-content: center;
   }
 }

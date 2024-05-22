@@ -89,6 +89,12 @@ h1 {
   }
 }
 
+@media (min-width: 986px) {
+  body {
+    height: 100dvh;
+  }
+}
+
 @media (max-width: 986px) {
   body {
     height: 100%;
@@ -97,16 +103,25 @@ h1 {
     background-size: cover;
     background-repeat: no-repeat;
   }
-}
-
-@media (max-width: 986px) {
   header {
     margin-bottom: 7rem;
   }
   .leftSection {
     align-items: center;
   }
+  main {
+    row-gap: 7rem;
+  }
+  main .leftSection .para {
+    width: 28rem;
+  }
   main .leftSection .para p {
-    width: 92%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 530px) {
+  main .leftSection .para {
+    width: 180%;
   }
 }

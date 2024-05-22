@@ -19,6 +19,12 @@ li:last-child a::after {
 
 /* main */
 
+main {
+  @media (max-width: 986px) {
+    flex-direction: column-reverse;
+  }
+}
+
 .leftPart {
   margin-left: 11dvw;
 }
